@@ -25,7 +25,9 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
               ),
               FloatingActionButton.small(
                 heroTag: 'configuracion',
-                onPressed: () {},
+                onPressed: () {
+                  print("Te extraño doris");
+                },
                 child: const Icon(Icons.settings),
               ),
             ],
