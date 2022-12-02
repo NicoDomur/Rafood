@@ -1,6 +1,6 @@
 # rafood
 
-A new Flutter project.
+Proyecto escolar en flutter.
 
 ## Getting Started
 
