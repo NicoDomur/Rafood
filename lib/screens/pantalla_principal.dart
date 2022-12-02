@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rafood/screens/pantalla_comida.dart';
+import 'package:rafood/widgets/widget_comida.dart';
 
 class PantallaPrincipal extends StatefulWidget {
   const PantallaPrincipal({super.key});
@@ -12,43 +14,12 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
 
   static final List<Widget> _pages = <Widget>[
     ListView(
-      children: [
-        const SizedBox(height: 10),
-        GestureDetector(
-          child: Card(
-            child: Column(children: [
-              ListTile(
-                leading: ClipRRect(
-                  borderRadius: BorderRadius.circular(15),
-                  child: Image.network(
-                    'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/640px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                title: const Text('titulo'),
-                subtitle: const Text('descripcion'),
-                contentPadding: const EdgeInsets.only(
-                    right: 30, left: 30, bottom: 20, top: 20),
-              ),
-            ]),
-          ),
-          onTap: () {
-            /*
-            final ruta = MaterialPageRoute(
-                builder: (context) => ComidaScreen(
-                      id: id,
-                      categoria: categoria,
-                      descComida: descripcion,
-                      nombreComida: titulo,
-                      precio: precio,
-                      ubicacion: ubicacion,
-                      imagenComida: imagenComida,
-                    ));
-            Navigator.push(context, ruta);
-            */
-          },
-        ),
-        const SizedBox(height: 10),
+      children: const [
+        SizedBox(height: 10),
+        WidgetComida(),
+        SizedBox(height: 10),
+        PantallaComida(),
+        SizedBox(height: 10),
       ],
     ),
     ListView(
