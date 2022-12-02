@@ -27,6 +27,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
                 heroTag: 'configuracion',
                 onPressed: () {
                   print("Hola Danna");
+                  print("git pull xd");
                 },
                 child: const Icon(Icons.settings),
               ),
