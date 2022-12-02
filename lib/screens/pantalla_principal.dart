@@ -20,7 +20,9 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
                 heroTag: 'busqueda',
                 disabledElevation: 0,
                 elevation: 0,
-                onPressed: () {},
+                onPressed: () {
+                  print("hola maeta");
+                },
                 child: const Icon(Icons.search),
               ),
               FloatingActionButton.small(
