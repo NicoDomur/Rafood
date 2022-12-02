@@ -26,7 +26,7 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
               FloatingActionButton.small(
                 heroTag: 'configuracion',
                 onPressed: () {
-                  print("Hola Danna");
+                  print("Hola Danna mi amor");
                   print("Doris, vuelve a mi");
                 },
                 child: const Icon(Icons.settings),
