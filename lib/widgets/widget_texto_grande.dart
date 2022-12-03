@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rafood/utils/Dimensiones.dart';
 
 // ignore: must_be_immutable
 class TextoGrande extends StatelessWidget {
@@ -10,7 +11,7 @@ class TextoGrande extends StatelessWidget {
     super.key,
     this.color = Colors.black,
     required this.texto,
-    this.tamanio = 18,
+    this.tamanio = 0,
     this.overflow = TextOverflow.ellipsis,
   });
 
@@ -22,7 +23,7 @@ class TextoGrande extends StatelessWidget {
       overflow: overflow,
       style: TextStyle(
         color: color,
-        fontSize: tamanio,
+        fontSize: tamanio == 0 ? Dimensiones.fuente18 : tamanio,
         fontWeight: FontWeight.w700,
       ),
     );

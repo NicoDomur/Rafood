@@ -13,12 +13,14 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
   int _selectedIndex = 0;
 
   static final List<Widget> _pages = <Widget>[
-    ListView(
+    Column(
       children: const [
         SizedBox(height: 10),
-        WidgetComida(),
-        SizedBox(height: 10),
-        PantallaComida(),
+        Expanded(
+          child: SingleChildScrollView(
+            child: PantallaComida(),
+          ),
+        ),
         SizedBox(height: 10),
       ],
     ),
