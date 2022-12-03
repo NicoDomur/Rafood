@@ -9,9 +9,10 @@ class Temas {
     colorScheme: const ColorScheme.light(onSurface: Colors.white),
     primaryColor: primarioLight,
     appBarTheme: const AppBarTheme(
-      color: primarioLight,
       foregroundColor: secundarioLight,
       elevation: 0,
+      backgroundColor: primarioLight,
+      surfaceTintColor: primarioLight,
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       backgroundColor: Colors.transparent,
