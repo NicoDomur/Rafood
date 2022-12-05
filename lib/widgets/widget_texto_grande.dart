@@ -22,6 +22,7 @@ class TextoGrande extends StatelessWidget {
       maxLines: 1,
       overflow: overflow,
       style: TextStyle(
+        fontFamily: 'Ubuntu',
         color: color,
         fontSize: tamanio == 0 ? Dimensiones.fuente18 : tamanio,
         fontWeight: FontWeight.w700,

@@ -101,6 +101,7 @@ class _PantallaComidaState extends State<PantallaComida> {
                   ),
                   child: Row(
                     children: [
+                      //imagen secccion
                       Container(
                         width: 120,
                         height: 90,
@@ -116,9 +117,36 @@ class _PantallaComidaState extends State<PantallaComida> {
                         ),
                       ),
                       Container(
-                        width: 100,
+                        padding: EdgeInsets.only(
+                          left: Dimensiones.ancho10,
+                          right: Dimensiones.ancho10,
+                        ),
+                        width: 205,
                         height: 90,
-                        decoration: const BoxDecoration(color: Colors.red),
+                        decoration: const BoxDecoration(color: Colors.white),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            TextoGrande(texto: 'Tacos de pito'),
+                            SizedBox(height: Dimensiones.alto10),
+                            TextoChico(texto: 'ingredientes'),
+                            SizedBox(height: Dimensiones.alto10),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: const [
+                                IconoTexto(
+                                    icono: Icons.location_on_sharp,
+                                    texto: 'Ubicacion',
+                                    colorIcono: Colors.indigo),
+                                IconoTexto(
+                                    icono: Icons.check_circle,
+                                    texto: 'Disponible ',
+                                    colorIcono: Colors.green),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
