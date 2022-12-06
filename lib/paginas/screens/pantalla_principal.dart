@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rafood/screens/pantalla_comida.dart';
+import 'package:rafood/paginas/screens/pantalla_comida.dart';
 import 'package:rafood/widgets/widget_comida.dart';
 
 class PantallaPrincipal extends StatefulWidget {

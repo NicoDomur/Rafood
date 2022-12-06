@@ -27,4 +27,12 @@ class Dimensiones {
   static double radio15 = alturaPantalla / 56.26;
 
   static double tamIcono24 = alturaPantalla / 35.17;
+  static double tamIcono16 = alturaPantalla / 52.75;
+
+  //list view size
+  static double listaVistaImgTamanio = anchoPantalla / 3.25;
+  static double listaVistaTextoContTamanio = alturaPantalla / 3.9;
+
+  //comida popular
+  static double comidaPopularImgTamanio = alturaPantalla / 2.30;
 }

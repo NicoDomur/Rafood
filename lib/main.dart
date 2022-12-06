@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:rafood/screens/pantalla_principal.dart';
+import 'package:rafood/paginas/food/popular_comida_detalle.dart';
+import 'package:rafood/paginas/screens/pantalla_principal.dart';
 import 'package:rafood/theme/temas.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Rafood',
-      home: const PantallaPrincipal(),
+      home: PopularComidaDetalle(),
       theme: Temas.lightTheme,
     );
   }

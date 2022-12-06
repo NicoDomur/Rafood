@@ -75,85 +75,83 @@ class _PantallaComidaState extends State<PantallaComida> {
             ],
           ),
         ),
-        SizedBox(
-          height: 900,
-          child: ListView.builder(
-            physics: const NeverScrollableScrollPhysics(),
-            itemCount: 10,
-            itemBuilder: (context, index) {
-              return Container(
-                margin: EdgeInsets.only(
-                  left: Dimensiones.ancho20,
-                  right: Dimensiones.ancho20,
-                  top: Dimensiones.alto10,
-                  bottom: Dimensiones.alto10,
+        ListView.builder(
+          physics: const NeverScrollableScrollPhysics(),
+          shrinkWrap: true,
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            return Container(
+              margin: EdgeInsets.only(
+                left: Dimensiones.ancho20,
+                right: Dimensiones.ancho20,
+                top: Dimensiones.alto10,
+                bottom: Dimensiones.alto10,
+              ),
+              child: Container(
+                width: 300,
+                height: 110,
+                padding: EdgeInsets.only(
+                  left: Dimensiones.ancho10,
+                  right: Dimensiones.ancho10,
                 ),
-                child: Container(
-                  width: 300,
-                  height: 110,
-                  padding: EdgeInsets.only(
-                    left: Dimensiones.ancho10,
-                    right: Dimensiones.ancho10,
-                  ),
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(Dimensiones.radio15),
-                  ),
-                  child: Row(
-                    children: [
-                      //imagen secccion
-                      Container(
-                        width: 120,
-                        height: 90,
-                        decoration: BoxDecoration(
-                          borderRadius:
-                              BorderRadius.circular(Dimensiones.radio15),
-                          color: Colors.white24,
-                          image: const DecorationImage(
-                            fit: BoxFit.cover,
-                            image: NetworkImage(
-                                "https://static.wikia.nocookie.net/vete-a-la-versh/images/f/fe/128b3abeaf2d591632a0bc598af49e36df8c0548_00.jpg/revision/latest?cb=20210626055915&path-prefix=es"),
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(Dimensiones.radio15),
+                ),
+                child: Row(
+                  children: [
+                    //imagen secccion
+                    Container(
+                      width: Dimensiones.listaVistaImgTamanio,
+                      height: Dimensiones.listaVistaImgTamanio,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.circular(Dimensiones.radio15),
+                        color: Colors.white24,
+                        image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: NetworkImage(
+                              "https://static.wikia.nocookie.net/vete-a-la-versh/images/f/fe/128b3abeaf2d591632a0bc598af49e36df8c0548_00.jpg/revision/latest?cb=20210626055915&path-prefix=es"),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(
+                        left: Dimensiones.ancho10,
+                        right: Dimensiones.ancho10,
+                      ),
+                      width: 205,
+                      height: 90,
+                      decoration: const BoxDecoration(color: Colors.white),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          TextoGrande(texto: 'Tacos de pito'),
+                          SizedBox(height: Dimensiones.alto10),
+                          TextoChico(texto: 'ingredientes'),
+                          SizedBox(height: Dimensiones.alto10),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: const [
+                              IconoTexto(
+                                  icono: Icons.location_on_sharp,
+                                  texto: 'Ubicacion',
+                                  colorIcono: Colors.indigo),
+                              IconoTexto(
+                                  icono: Icons.check_circle,
+                                  texto: 'Disponible ',
+                                  colorIcono: Colors.green),
+                            ],
                           ),
-                        ),
+                        ],
                       ),
-                      Container(
-                        padding: EdgeInsets.only(
-                          left: Dimensiones.ancho10,
-                          right: Dimensiones.ancho10,
-                        ),
-                        width: 205,
-                        height: 90,
-                        decoration: const BoxDecoration(color: Colors.white),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            TextoGrande(texto: 'Tacos de pito'),
-                            SizedBox(height: Dimensiones.alto10),
-                            TextoChico(texto: 'ingredientes'),
-                            SizedBox(height: Dimensiones.alto10),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: const [
-                                IconoTexto(
-                                    icono: Icons.location_on_sharp,
-                                    texto: 'Ubicacion',
-                                    colorIcono: Colors.indigo),
-                                IconoTexto(
-                                    icono: Icons.check_circle,
-                                    texto: 'Disponible ',
-                                    colorIcono: Colors.green),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              );
-            },
-          ),
+              ),
+            );
+          },
         )
       ],
     );
