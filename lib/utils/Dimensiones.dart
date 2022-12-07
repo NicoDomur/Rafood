@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 
 /*
 Parte fundamental para hacer medidas dinamicas para telefonos mas chicos.
+844
 */
 
 class Dimensiones {
@@ -22,7 +23,9 @@ class Dimensiones {
   static double ancho20 = alturaPantalla / 42.2;
   static double ancho30 = alturaPantalla / 28.13;
 
+  static double fuente14 = alturaPantalla / 60.2;
   static double fuente18 = alturaPantalla / 46.9;
+  static double fuente24 = alturaPantalla / 35.17;
 
   static double radio15 = alturaPantalla / 56.26;
 

@@ -18,7 +18,6 @@ class TextoChico extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       texto,
-      maxLines: 1,
       style: TextStyle(
         color: color,
         fontSize: tamanio,

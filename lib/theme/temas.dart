@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class Temas {
   static const Color primarioLight = Colors.white; //tema general aplicacion
   static const Color secundarioLight = Colors.teal;
+  //static const Color tenue = Color.fromARGB(255, 206, 239, 239);
+  static const Color tenue = Color.fromARGB(30, 0, 128, 128);
   static const Color back = Colors.black; //tema fuente
   static final ThemeData lightTheme = ThemeData.light().copyWith(
     useMaterial3: true,

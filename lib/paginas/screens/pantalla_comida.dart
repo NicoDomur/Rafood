@@ -2,6 +2,7 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:rafood/theme/temas.dart';
 import 'package:rafood/utils/Dimensiones.dart';
+import 'package:rafood/widgets/app_columna.dart';
 import 'package:rafood/widgets/widget_comida.dart';
 import 'package:rafood/widgets/widget_icono_texto.dart';
 import 'package:rafood/widgets/widget_texto_chico.dart';
@@ -221,36 +222,8 @@ class _PantallaComidaState extends State<PantallaComida> {
                   left: Dimensiones.ancho15,
                   right: Dimensiones.ancho15,
                 ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    TextoGrande(texto: 'Prueba'),
-                    SizedBox(height: Dimensiones.alto10),
-                    Row(
-                      children: [
-                        Wrap(
-                          children: List.generate(5, (index) {
-                            return const Icon(Icons.star,
-                                color: Temas.secundarioLight, size: 15);
-                          }),
-                        ),
-                        SizedBox(width: Dimensiones.ancho10),
-                        TextoChico(texto: '4.5'),
-                        SizedBox(width: Dimensiones.ancho10),
-                        TextoChico(texto: 'Quien lo vende'),
-                      ],
-                    ),
-                    SizedBox(height: Dimensiones.alto20),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
-                        IconoTexto(
-                            icono: Icons.check_circle,
-                            texto: 'Disponible',
-                            colorIcono: Colors.green)
-                      ],
-                    ),
-                  ],
+                child: AppColumna(
+                  texto: 'Prueba de texto',
                 ),
               ),
             ),
