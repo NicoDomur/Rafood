@@ -87,6 +87,7 @@ class RecomendadaComidaDetalle extends StatelessWidget {
                   backgroundColor: Temas.secundarioLight,
                   tamIcono: Dimensiones.tamIcono24,
                 ),
+                TextoGrande(texto: 'ª'),
                 AppIcono(
                   icono: Icons.add,
                   iconoColor: Colors.white,
