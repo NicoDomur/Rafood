@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "896726686145",
+    "project_id": "prueba-16fba",
+    "storage_bucket": "prueba-16fba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896726686145:android:2914dae8ca533e5596b740",
+        "android_client_info": {
+          "package_name": "com.example.rafood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896726686145-9t576mma45v9obvv1n2l8d5mfsm43u4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUaJRIg_TTn5kxcUk8L3KVCNi9S1WX49w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896726686145-9t576mma45v9obvv1n2l8d5mfsm43u4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
